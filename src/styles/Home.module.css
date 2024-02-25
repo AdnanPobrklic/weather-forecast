@@ -1,0 +1,26 @@
+.main{
+    background-color: var(--light);
+}
+
+.banner-div{
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    background-image: url("../assets/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-container{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    margin: 150px auto;
+}
+
+@media (max-width: 800px) {
+    .input-container{
+        width: clamp(300px, 70%, 400px);
+    }
+}

@@ -1,0 +1,39 @@
+.forecast ul li{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 25px;
+    color: #000;
+    padding: 15px;
+    border-bottom: 1px solid var(--gray);
+    margin: 15px 0px;
+}
+
+.forecast p:first-child{
+    text-transform: uppercase;
+}
+
+.forecast p:first-child{
+    padding: 15px;
+    border-bottom: 1px solid var(--gray);
+}
+
+@media (max-width: 450px){
+    .forecast ul li{
+        font-size: .8rem;
+    }
+
+    .forecast ul li img{
+        width: 52px;
+    }
+}
+
+@media (max-width: 350px){
+    .forecast ul li{
+        font-size: .7rem;
+    }
+
+    .forecast ul li img{
+        width: 42px;
+    }
+}

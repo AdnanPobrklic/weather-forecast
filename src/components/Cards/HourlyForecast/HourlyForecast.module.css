@@ -1,0 +1,58 @@
+.location-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--dark-bg);
+    border-radius: 5px;
+    color: var(--dark-bg);
+}
+
+.hourly-container{
+    overflow: auto;
+    height: 300px;
+}
+
+.hourly-container p, .forecast p:first-child, .heading p:first-child{
+    text-transform: uppercase;
+}
+
+.hourly-container p{
+    padding: 15px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.hourly-container ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.hourly-container ul li{
+    color: #000;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    padding: 15px;
+    gap: 25px;
+}
+
+.hourly-rain-fc, .fc-rain-info{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 450px){
+    .hourly-container ul li{
+        font-size: .8rem;
+    }
+
+    .hourly-container ul li img{
+        width: 52px;
+    }
+}
+
