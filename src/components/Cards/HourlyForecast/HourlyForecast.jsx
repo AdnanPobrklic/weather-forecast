@@ -9,7 +9,7 @@ export default function HourlyForecast({ weatherData }){
 
     return(
         <div className={`card ${classes["hourly-container"]}`}>
-            <p className="card-heading-text">Todays hourly forecast</p>
+            <p className="card-heading-text">Hourly forecast</p>
             <ul>
                 {fullHourly.map((hour, index) => (
                     <li key={hour.time}>
